@@ -10,8 +10,8 @@ Frontend Mentor provides real-world projects, ranging from beginner to expert le
 
 | Challenge                             | Level   | Live Demo | Code        |
 |---------------------------------------|---------|-----------|-------------|
-| QR code | Begginer| [Demo](https://qr-code-james-gitere.netlify.app/) | [Code](link-to-folder) |
-| Testimonial grid | Beginner| [Demo](https://james-gitere-testimonial-grid.netlify.app/) | [Code](link-to-folder) |
+| QR code | Begginer| [Demo](https://qr-code-james-gitere.netlify.app/) | [Code](https://github.com/gitere001/frontend-mentor-challenges/tree/master/QR_CODE) |
+| Testimonial grid | Beginner| [Demo](https://james-gitere-testimonial-grid.netlify.app/) | [Code](https://github.com/gitere001/frontend-mentor-challenges/tree/master/testimonial_grid) |
 |  | |  |  |
 
 
