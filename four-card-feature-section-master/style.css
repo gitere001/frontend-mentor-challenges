@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+	/* ### Primary */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* ### Neutral */
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: var(--Very-Light-Gray);
+	font-size: .9375rem;
+
+}
+.container {
+	width: 80%;
+	margin: 3.125rem auto;
+	padding: 10px;
+}
+header {
+	margin-bottom: 3.125rem;
+}
+
+header p:first-child, p {
+	color: var(--Grayish-Blue);
+}
+header p:first-child {
+	word-spacing: 3px;
+	font-size: 1rem;
+}
+header p:nth-child(2) {
+	font-weight: 800;
+	font-size: 1rem;
+	word-spacing: 3px;
+	color: var(--Very-Dark-Blue);
+}
+
+
+.card {
+	box-shadow: 0 4px 10px rgba(0, 102, 204, 0.15);
+	padding: 20px;
+	margin-bottom: 15px;
+	font-size: 13px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+
+}
+
+.card h2 {
+	color: var(--Very-Dark-Blue);
+	font-size: .9375rem;
+}
+.card img {
+	max-width: 40px;
+	align-self: flex-end;
+}
+.supervisor {
+	border-top: 5px solid var(--Cyan);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.team-builder {
+	border-top: 5px solid var(--Red);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.karma {
+	border-top: 5px solid var(--Orange);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.calculator {
+	border-top: 5px solid var(--Blue);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+@media (min-width: 576px) {
+	body {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.container {
+		max-width: 900px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card {
+		gap: 0;
+		margin-bottom: 0;
+
+	}
+	header {
+		width: 50%;
+		text-align: center;
+		margin: 0  auto 3.125rem auto;
+		font-size: 1.125rem;
+	}
+	header p:nth-child(3) {
+		font-size: .8125rem;
+	}
+
+
+	main {
+		display: grid;
+		gap: 10px;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-areas:
+		"superv team calculator"
+		"superv karma calculator"
+		;
+	}
+	.supervisor {
+		grid-area: superv;
+		height: fit-content;
+		align-self: center;
+
+	}
+	.team-builder {
+		grid-area: team;
+	}
+	.calculator {
+		grid-area: calculator;
+		height: fit-content;
+		align-self: center;
+	}
+	.karma {
+		grid-area: karma;
+	}
+}
+
